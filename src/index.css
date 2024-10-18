@@ -1,13 +1,112 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+} 
+html,body{
+  height: 100%;
+  width: 100%;
 }
+.nav{
+  display: flex;
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: rgba(7, 21, 214, 0.774);
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+main{
+  height: 90vh;
+  width: 100vw;
+  background-color: rgb(10, 10, 158);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .welcome{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.btn{
+  background-color: rgb(5, 74, 119);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.p{
+  color: white;
+}
+.chat{
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(10, 10, 158);
+}
+.send-message{
+background-color: rgb(83, 83, 182);
+padding: 15px 30px;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 3px;
+  left: 0;
+  justify-content: space-between;
+}
+.form-input__input{
+  width: 80%;
+  padding: 10px 10px;
+  border:1px solid rgb(10, 10, 80) ;
+  outline: none;
+  border-radius: 10px;
+  
+}
+.chat-box{
+  background-color: rgba(147, 147, 233, 0.781);
+  padding: 5px 5px ;
+  margin-top: 5px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin-left: 10px;
+  border-radius:10px 10px  10px 0 ;
+}
+.chat-box img{
+  height: 30px;
+  width: 30px;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.text .h{
+  font:bold;
+  font-size: 15px;
+}
+.text .sh{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.548);
+}
+.white{
+  background-color: white;
+  display: flex;
+ 
+}
+.end{
+  display: flex;
+  flex-direction: column;
+ 
+  width: 100%;
+  align-items: flex-end;
+  padding: 0px 10px;
 }
