@@ -9,6 +9,10 @@ import { app } from './Firebase/firebase';
 const auth =getAuth(app);
 function App() {
   const [user,setUser]=useState(null);
+
+
+  console.log("Project Starting ....");
+
   useEffect(()=>{
   onAuthStateChanged(auth,user=>{
   if(user){
